@@ -20,7 +20,7 @@ func LoadConfig(file string) error {
 	return err
 }
 
-func LoadAndGetConfig(file string) (*configer, error) {
+func LoadAndGetConfiger(file string) (*configer, error) {
 
 	cfg := constructerConfiger(file)
 	err := cfg.readFile()
